@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "Full-Stack Developer focused on creating scalable and efficient web solutions using technologies like JavaScript, Python, React, and Node.js, emphasizing user experience and development best practices.",
   generator: "v0.app",
   icons: {
-    icon: "avatar.png",
+    icon: "avatar.jpg",
   },
   
 }

@@ -231,7 +231,7 @@ export default function Home() {
           </div>
           <div className="pt-0 sm:pt-2">
             <h1 className="text-2xl sm:text-3xl font-normal mb-1">Alvaro Aburto Ocampo</h1>
-            <p className="text-gray-400 text-sm sm:text-base mb-1">Full-Stack Developer</p>
+            <p className="text-gray-400 text-sm sm:text-base mb-1">Full-Stack Developer <span className="opacity-75 text-center text-gray-500 text-xs">+2 experience</span> </p>
             <p className="text-gray-500 text-sm sm:text-base">Guanacaste, Playas del Coco · Costa Rica</p>
           </div>
         </div>
@@ -466,10 +466,10 @@ export default function Home() {
             <div className="flex flex-col md:grid md:grid-cols-[140px_1fr] gap-2 md:gap-8">
               <div className="text-gray-500 text-xs sm:text-sm">LinkedIn</div>
               <Link
-                href="www.linkedin.com/in/alvaro-aburto-dev"
+                href="https://www.linkedin.com/in/alvaro-aburto-dev/"
                 className="inline-flex items-center gap-1.5 text-sm sm:text-base hover:text-gray-300 group"
               >
-                LinkedIn Profile
+                alvaro-aburto-dev
                 <svg
                   className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gray-500 group-hover:text-gray-400"
                   fill="none"
