@@ -261,7 +261,14 @@ export default function Home() {
                   strategies and development best practices to optimize performance and usability. Designed RESTful
                   APIs, database structures, and scalable components for web and mobile projects.
                 </p>
-                <p className="text-gray-500 text-xs sm:text-sm">React.js • Python • WordPress • RESTful APIs • SEO</p>
+                <ul className="text-gray-500 text-xs sm:text-sm flex flex-wrap gap-3">
+  <li>React.js</li>
+  <li>Python</li>
+  <li>WordPress</li>
+  <li>RESTful APIs</li>
+  <li>SEO</li>
+</ul>
+
               </div>
             </div>
 
@@ -276,9 +283,12 @@ export default function Home() {
                   Advised small businesses on implementing digital tools. Developed customized websites and applications
                   prioritizing user experience. Maintained and optimized web pages for performance and SEO.
                 </p>
-                <p className="text-gray-500 text-xs sm:text-sm">
-                  Web Development • SEO • User Experience • Digital Consulting
-                </p>
+                      <ul className="text-gray-500 text-xs sm:text-sm flex flex-wrap gap-3">
+  <li>Web Development</li>
+  <li>SEO</li>
+  <li>User Experience</li>
+  <li>Digital Consulting</li>
+</ul>
               </div>
             </div>
 
@@ -294,7 +304,13 @@ export default function Home() {
                   React, TailwindCSS, Material UI, Node.js, and SQL to create a modern and responsive interface.
                   Implemented contact forms and informative sections for client interaction.
                 </p>
-                <p className="text-gray-500 text-xs sm:text-sm">React • TailwindCSS • Material UI • Node.js • SQL</p>
+                 <ul className="text-gray-500 text-xs sm:text-sm flex flex-wrap gap-3">
+  <li>ReactJS</li>
+  <li>TailwindCSS</li>
+  <li>Material UI</li>
+  <li>NodeJS</li>
+  <li>SQL</li>
+</ul>
               </div>
             </div>
           </div>
@@ -449,7 +465,7 @@ export default function Home() {
             <div className="flex flex-col md:grid md:grid-cols-[140px_1fr] gap-2 md:gap-8">
               <div className="text-gray-500 text-xs sm:text-sm">LinkedIn</div>
               <Link
-                href="https://www.linkedin.com/in/alvaro-aburto"
+                href="www.linkedin.com/in/alvaro-aburto-dev"
                 className="inline-flex items-center gap-1.5 text-sm sm:text-base hover:text-gray-300 group"
               >
                 LinkedIn Profile
