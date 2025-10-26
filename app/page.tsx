@@ -177,7 +177,7 @@ export default function Home() {
             >
               ESC
             </button>
-
+            
             {/* Decorative year markers - small text scattered around */}
             <div className="absolute top-24 left-16 text-xs font-medium text-white/30">2022</div>
             <div className="absolute top-1/3 right-24 text-xs font-medium text-white/30">2024</div>
@@ -191,7 +191,7 @@ export default function Home() {
             {/* Main content - huge brutalist typography */}
             <div className="relative z-10 w-full max-w-6xl space-y-0 leading-none">
               <Link
-                href="https://www.linkedin.com/in/alvaro-aburto"
+                href="www.linkedin.com/in/alvaro-aburto-dev"
                 target="_blank"
                 className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[8rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors"
               >
@@ -199,7 +199,7 @@ export default function Home() {
               </Link>
 
               <Link
-                href="https://www.linkedin.com/in/alvaro-aburto"
+                href="www.linkedin.com/in/alvaro-aburto-dev"
                 target="_blank"
                 className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[8rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors"
               >
@@ -208,6 +208,7 @@ export default function Home() {
 
               <Link
                 href="mailto:alvaroaburto71@gmail.com"
+                target="_black"
                 className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[8rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors mt-4"
               >
                 EMAIL
