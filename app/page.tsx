@@ -184,7 +184,7 @@ export default function Home() {
               <Link
                 href="https://www.linkedin.com/in/alvaro-aburto"
                 target="_blank"
-                className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[14rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors"
+                className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[8rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors"
               >
                 LINKED
               </Link>
@@ -192,21 +192,21 @@ export default function Home() {
               <Link
                 href="https://www.linkedin.com/in/alvaro-aburto"
                 target="_blank"
-                className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[14rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors"
+                className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[8rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors"
               >
                 IN
               </Link>
 
               <Link
                 href="mailto:alvaroaburto71@gmail.com"
-                className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[14rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors mt-4"
+                className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[8rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors mt-4"
               >
                 EMAIL
               </Link>
 
               <Link
                 href="tel:+50664670470"
-                className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[14rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors mt-4"
+                className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[10rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors mt-4"
               >
                 PHONE
               </Link>
@@ -216,7 +216,7 @@ export default function Home() {
       )}
 
       {/* Main Content */}
-      <main className="max-w-3xl mx-auto px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-20">
+      <main className="max-w-xl mx-auto px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-20">
         {/* Profile Section */}
         <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-12 md:mb-16">
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden flex-shrink-0 bg-blue-500">

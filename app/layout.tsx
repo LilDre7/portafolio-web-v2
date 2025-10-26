@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Alvaro Aburto - Developer",
-  description: "Portfolio of Maxime Bonhomme, a product-focused developer building dynamic, creative products.",
+  description: "Full-Stack Developer focused on creating scalable and efficient web solutions using technologies like JavaScript, Python, React, and Node.js, emphasizing user experience and development best practices.",
   generator: "v0.app",
 }
 
