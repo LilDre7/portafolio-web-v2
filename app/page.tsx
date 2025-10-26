@@ -191,7 +191,7 @@ export default function Home() {
             {/* Main content - huge brutalist typography */}
             <div className="relative z-10 w-full max-w-6xl space-y-0 leading-none">
               <Link
-                href="www.linkedin.com/in/alvaro-aburto-dev"
+                href="https://www.linkedin.com/in/alvaro-aburto-dev/"
                 target="_blank"
                 className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[8rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors"
               >
@@ -199,7 +199,7 @@ export default function Home() {
               </Link>
 
               <Link
-                href="www.linkedin.com/in/alvaro-aburto-dev"
+                href="https://www.linkedin.com/in/alvaro-aburto-dev/"
                 target="_blank"
                 className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[8rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors"
               >
@@ -216,6 +216,7 @@ export default function Home() {
 
               <Link
                 href="tel:+50664670470"
+                target="_black"
                 className="block text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[10rem] font-black uppercase leading-[0.85] text-white hover:text-gray-400 transition-colors mt-4"
               >
                 PHONE
