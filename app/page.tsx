@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import type { JSX } from "react/jsx-runtime" // Added import for JSX
+import imageToAdd from "/public/favcon.png";
 
 const TechIcon = ({ name }: { name: string }) => {
   const icons: Record<string, JSX.Element> = {
@@ -138,7 +139,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white">
       {/* Logo */}
       <div className="fixed top-4 left-4 md:top-6 md:left-6 z-10">
-        <span className="text-sm font-medium text-white">JS</span>
+        <span className="text-sm font-medium text-white"> <img width={30} height={30} src="/avatar.jpg" className="rounded-full" alt="Image" /> </span>
       </div>
 
       <div className="fixed top-4 right-4 md:top-6 md:right-6 z-10">
