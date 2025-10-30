@@ -153,7 +153,7 @@ export default function Home() {
       <div className="fixed top-4 right-4 md:top-6 md:right-6 z-10">
         <button
           onClick={() => setIsModalOpen(true)}
-          className="text-sm text-gray-400 hover:text-white transition-colors"
+          className="text-sm text-gray-400 hover:text-white transition-colors p-2 border-black border-2 border-white rounded-md" 
         >
           Connect
         </button>
@@ -249,7 +249,7 @@ export default function Home() {
         {/* About Section */}
         <section className="mb-16 md:mb-20">
           <h2 className="text-base font-normal mb-4 md:mb-6">About</h2>
-          <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
+          <p className="text-gray-400 leading-relaxed text-sm sm:text-sm">
             Full-Stack Developer focused on creating scalable and efficient web solutions using technologies like
             JavaScript, Python, React, and Node.js, emphasizing user experience and development best practices.
           </p>
@@ -267,7 +267,7 @@ export default function Home() {
                 <h3 className="font-normal text-sm sm:text-base mb-2 md:mb-3">
                   Full-Stack Developer – Agency Design Dreams Studio
                 </h3>
-                <p className="text-gray-400 text-sm sm:text-base mb-3 md:mb-4">
+                <p className="text-gray-400 text-sm sm:text-sm mb-3 md:mb-4">
                   Developed custom web solutions for clients using React.js, Python, and WordPress. Implemented SEO
                   strategies and development best practices to optimize performance and usability. Designed RESTful
                   APIs, database structures, and scalable components for web and mobile projects.
@@ -292,7 +292,7 @@ export default function Home() {
                 <h3 className="font-normal text-sm sm:text-base mb-2 md:mb-3">
                   In-House Web Developer – COCO GYM FITNESS
                 </h3>
-                <p className="text-gray-400 text-sm sm:text-base mb-3 md:mb-4">
+                <p className="text-gray-400 text-sm sm:text-sm mb-3 md:mb-4">
                   Developed the official gym website as a personal initiative to improve its digital presence. Used
                   React, TailwindCSS, Material UI, Node.js, and SQL to create a modern and responsive interface.
                   Implemented contact forms and informative sections for client interaction.
@@ -313,7 +313,7 @@ export default function Home() {
                 <h3 className="font-normal text-sm sm:text-base mb-2 md:mb-3">
                   Freelance Web Consultant – Digital Tools & Development
                 </h3>
-                <p className="text-gray-400 text-sm sm:text-base mb-3 md:mb-4">
+                <p className="text-gray-400 text-sm sm:text-sm mb-3 md:mb-4">
                   Advised small businesses on implementing digital tools. Developed customized websites and applications
                   prioritizing user experience. Maintained and optimized web pages for performance and SEO.
                 </p>
