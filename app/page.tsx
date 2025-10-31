@@ -4,23 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
-import { icons } from "@/components/icons";
-
-const TechIcon = ({ name }: { name: string }) => {
-  return (
-    icons[name] || (
-      <svg
-        className="w-3 h-3"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <circle cx="12" cy="12" r="9" />
-      </svg>
-    )
-  );
-};
+import Skills from "@/components/skills";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -47,6 +31,7 @@ export default function Home() {
         </span>
       </div>
 
+
       <div className="fixed top-4 right-4 md:top-6 md:right-6 z-10">
         <button
           onClick={() => setIsModalOpen(true)}
@@ -64,7 +49,7 @@ export default function Home() {
           onClick={() => setIsModalOpen(false)}
         >
           <div
-            className={`w-full h-full flex flex-col items-center justify-center p-8 relative transition-all duration-700 ease-out ${
+            className={`w-full h-full flex flex-col items-center justify-center p-8 relative delay-150 transition-all duration-700 ease-in-out animate-click ${
               isModalOpen
                 ? "translate-y-0 scale-100 opacity-100"
                 : "translate-y-full scale-95 opacity-0"
@@ -78,7 +63,6 @@ export default function Home() {
             >
               ESC
             </button>
-
             {/* Decorative year markers - small text scattered around */}
             <div className="absolute top-24 left-16 text-xs font-medium text-white/30">
               2022
@@ -151,10 +135,10 @@ export default function Home() {
               Alvaro Aburto Ocampo
             </h1>
             <p className="text-gray-400 text-sm sm:text-base mb-1">
-              Full-Stack Developer{" "}
+              Full-Stack Developer
               <span className="opacity-75 text-center text-gray-500 text-xs">
                 +2 experience
-              </span>{" "}
+              </span>
             </p>
             <p className="text-gray-500 text-sm sm:text-base">
               Guanacaste, Playas del Coco · Costa Rica
@@ -320,113 +304,10 @@ export default function Home() {
         </section>
 
         {/* Skills Section */}
-        <section className="mb-16 md:mb-20">
-          <h2 className="text-base font-normal mb-8 md:mb-10">
-            Skills & Technologies
-          </h2>
-
-          <div className="space-y-10 md:space-y-12">
-            {/* Languages */}
-            <div className="flex flex-col md:grid md:grid-cols-[140px_1fr] gap-2 md:gap-8">
-              <div className="text-gray-500 text-xs sm:text-sm pt-1">
-                Languages
-              </div>
-              <div className="flex flex-wrap gap-2 items-center">
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="React" />
-                  React
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="Vue" />
-                  Vue
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="TypeScript" />
-                  TypeScript
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="JavaScript" />
-                  JavaScript
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="TailwindCSS" />
-                  TailwindCSS
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="HTML" />
-                  HTML
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="CSS" />
-                  CSS
-                </span>
-              </div>
-            </div>
-
-            {/* Backend - Added icons to each technology tag */}
-            <div className="flex flex-col md:grid md:grid-cols-[140px_1fr] gap-2 md:gap-8">
-              <div className="text-gray-500 text-xs sm:text-sm pt-1">
-                Backend
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="Node.js" />
-                  Node.js
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="Express" />
-                  Express
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="Python" />
-                  Python
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name=".NET" />
-                  .NET
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="MongoDB" />
-                  MongoDB
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="PostgreSQL" />
-                  PostgreSQL
-                </span>
-              </div>
-            </div>
-
-            {/* Tools - Added icons to each technology tag */}
-            <div className="flex flex-col md:grid md:grid-cols-[140px_1fr] gap-2 md:gap-8">
-              <div className="text-gray-500 text-xs sm:text-sm pt-1">Tools</div>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="Git" />
-                  Git
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="Docker" />
-                  Docker
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="WordPress" />
-                  WordPress
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="Microsoft365" />
-                  Microsoft 365
-                </span>
-                <span className="px-2 py-1 text-xs bg-gray-900 text-gray-400 rounded flex items-center gap-1.5">
-                  <TechIcon name="GoogleWorkspace" />
-                  Google Workspace
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Skills />
 
         {/* Links Section */}
-        <section>
+        <section className="ml-2 pb-10 sm:ml-0">
           <h2 className="text-base font-normal mb-8 md:mb-10">Links</h2>
 
           <div className="space-y-6">
