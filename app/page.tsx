@@ -20,14 +20,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Logo */}
-      <div className="fixed top-3 left-4 md:top-4 md:left-6 z-10">
+      <div className="fixed top-3 left-2 md:top-4 md:left-6 z-10">
         <span className="text-sm font-medium text-white">
-          {" "}
           <img
             src="/logo.png"
             className="rounded-full w-12 h-12 sm:w-14 sm:h-14"
             alt="Image"
-          />{" "}
+          />
         </span>
       </div>
 
@@ -118,7 +117,7 @@ export default function Home() {
       )}
 
       {/* Main Content */}
-      <main className="max-w-xl mx-auto px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-20">
+      <main className="max-w-xl mx-auto mt-3 px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-20">
         {/* Profile Section */}
         <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-12 md:mb-16">
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden flex-shrink-0 bg-blue-500">
