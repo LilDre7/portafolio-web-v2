@@ -40,8 +40,6 @@ Bienvenido a mi portafolio personal, creado para mostrar mis proyectos, habilida
 1. **Clona el repositorio:**
    ```bash
    git clone https://github.com/TU_USUARIO/TU_REPO.git
-   
-````
 
 2. **Instala las dependencias:**
 
@@ -84,19 +82,11 @@ Cada commit en la rama principal se despliega automáticamente.
 ## 👨‍💻 Autor
 
 **Álvaro Aburto**
-💼 Desarrollador Frontend | TypeScript | React | Next.js
+💼 Web developer
 🌎 [https://alvaro-aburto.vercel.app/](https://alvaro-aburto.vercel.app/)
 
 ---
 
 ## 📝 Licencia
 
-Este proyecto es de uso personal. No se permite su redistribución sin autorización del autor.
-
-```
-
----
-
-¿Quieres que le agregue una **preview con una imagen del sitio** (por ejemplo, una captura de pantalla o banner)?  
-Puedo incluir el bloque markdown con eso si lo deseas.
-```
+Usalo no me importa ademas me inspire de otro muy similiar. ✌️
