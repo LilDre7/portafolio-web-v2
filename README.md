@@ -1,30 +1,102 @@
-# Bonhomme website clone
+# 🌐 Alvaro Aburto - Portafolio Web
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Bienvenido a mi portafolio personal, creado para mostrar mis proyectos, habilidades y experiencia como desarrollador web.  
+👉 **Visita el sitio:** [https://alvaro-aburto.vercel.app/](https://alvaro-aburto.vercel.app/)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/thelildre666gmailcoms-projects/v0-bonhomme-website-clone)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/PzXgcuoQUNq)
+---
 
-## Overview
+## 🧠 Tecnologías principales
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+| Tecnología | Uso |
+|-------------|-----|
+| 🟦 **TypeScript** | Tipado estático para mayor seguridad y mantenibilidad del código |
+| 🎨 **CSS / PostCSS** | Estilos modernos y optimizados |
+| ⚛️ **Next.js** | Framework de React para renderizado del lado del servidor y generación estática |
+| 📦 **pnpm** | Gestor de paquetes rápido y eficiente |
 
-## Deployment
+---
 
-Your project is live at:
+## 📂 Estructura del proyecto
 
-**[https://vercel.com/thelildre666gmailcoms-projects/v0-bonhomme-website-clone](https://vercel.com/thelildre666gmailcoms-projects/v0-bonhomme-website-clone)**
+```
 
-## Build your app
+.
+├── app/               # Rutas y páginas principales (Next.js App Router)
+├── components/        # Componentes reutilizables
+├── lib/               # Funciones y utilidades
+├── public/            # Archivos estáticos (imágenes, íconos, etc.)
+├── styles/            # Estilos globales y módulos CSS
+├── next.config.mjs    # Configuración de Next.js
+├── package.json       # Dependencias y scripts
+├── tsconfig.json      # Configuración de TypeScript
+└── README.md          # Documentación del proyecto
 
-Continue building your app on:
+````
 
-**[https://v0.app/chat/projects/PzXgcuoQUNq](https://v0.app/chat/projects/PzXgcuoQUNq)**
+---
 
-## How It Works
+## ⚙️ Instalación y ejecución local
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/TU_USUARIO/TU_REPO.git
+   
+````
+
+2. **Instala las dependencias:**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Ejecuta el servidor de desarrollo:**
+
+   ```bash
+   pnpm dev
+   ```
+
+4. **Abre el proyecto en tu navegador:**
+
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🧩 Scripts útiles
+
+| Comando      | Descripción                                   |
+| ------------ | --------------------------------------------- |
+| `pnpm dev`   | Inicia el entorno de desarrollo               |
+| `pnpm build` | Genera la versión de producción               |
+| `pnpm start` | Inicia el servidor con la build de producción |
+| `pnpm lint`  | Revisa el código en busca de errores y estilo |
+
+---
+
+## 🚀 Despliegue
+
+El sitio está desplegado en **[Vercel](https://vercel.com/)**, con integración continua desde GitHub.
+Cada commit en la rama principal se despliega automáticamente.
+
+---
+
+## 👨‍💻 Autor
+
+**Álvaro Aburto**
+💼 Desarrollador Frontend | TypeScript | React | Next.js
+🌎 [https://alvaro-aburto.vercel.app/](https://alvaro-aburto.vercel.app/)
+
+---
+
+## 📝 Licencia
+
+Este proyecto es de uso personal. No se permite su redistribución sin autorización del autor.
+
+```
+
+---
+
+¿Quieres que le agregue una **preview con una imagen del sitio** (por ejemplo, una captura de pantalla o banner)?  
+Puedo incluir el bloque markdown con eso si lo deseas.
+```
