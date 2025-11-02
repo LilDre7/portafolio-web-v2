@@ -10,7 +10,7 @@ Bienvenido a mi portafolio personal, creado para mostrar mis proyectos, habilida
 | Tecnología | Uso |
 |-------------|-----|
 | 🟦 **TypeScript** | Tipado estático para mayor seguridad y mantenibilidad del código |
-| 🎨 **CSS / PostCSS** | Estilos modernos y optimizados |
+| 🎨 **CSS / Tailwind** | Estilos modernos y optimizados |
 | ⚛️ **Next.js** | Framework de React para renderizado del lado del servidor y generación estática |
 | 📦 **pnpm** | Gestor de paquetes rápido y eficiente |
 
@@ -39,7 +39,7 @@ Bienvenido a mi portafolio personal, creado para mostrar mis proyectos, habilida
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/TU_USUARIO/TU_REPO.git
+   https://github.com/LilDre7/portafolio-web-v2.git
 
 2. **Instala las dependencias:**
 
