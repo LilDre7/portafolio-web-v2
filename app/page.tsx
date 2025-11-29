@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
 import Skills from "@/components/skills";
+import Projects from "@/components/projects";
+import ProfileSection from "@/components/profile-section";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,11 +32,10 @@ export default function Home() {
         </span>
       </div>
 
-
       <div className="fixed top-4 right-4 md:top-6 md:right-6 z-10">
         <button
           onClick={() => setIsModalOpen(true)}
-          className="text-sm text-gray-400 hover:text-white transition-colors p-2 border-black border-2 border-white rounded-md"
+          className="text-sm text-gray-400 hover:text-white transition-colors p-2 border-white border-2 rounded-md"
         >
           Connect
         </button>
@@ -119,31 +120,7 @@ export default function Home() {
       {/* Main Content */}
       <main className="max-w-xl mx-auto mt-3 px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-20">
         {/* Profile Section */}
-        <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-12 md:mb-16">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden flex-shrink-0 bg-blue-500">
-            <Image
-              src="/avatar.jpg"
-              alt="Alvaro Aburto Ocampo"
-              width={96}
-              height={96}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="pt-0 sm:pt-2">
-            <h1 className="text-2xl sm:text-3xl font-normal mb-1">
-              Alvaro Aburto Ocampo
-            </h1>
-            <p className="text-gray-400 text-sm sm:text-base mb-1">
-              Full-Stack Developer
-              <span className="opacity-75 text-center text-gray-500 text-xs">
-                +2 experience
-              </span>
-            </p>
-            <p className="text-gray-500 text-sm sm:text-base">
-              Guanacaste, Playas del Coco · Costa Rica
-            </p>
-          </div>
-        </div>
+        <ProfileSection />
 
         {/* About Section */}
         <section className="mb-16 md:mb-20">
@@ -301,6 +278,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Projects Section */}
+        <Projects />
 
         {/* Skills Section */}
         <Skills />
