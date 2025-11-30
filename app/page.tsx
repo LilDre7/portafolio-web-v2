@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
 import ProfileSection from "@/components/profile-section";
+import Workexperince from "@/components/work-experience";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,7 +36,7 @@ export default function Home() {
       <div className="fixed top-4 right-4 md:top-6 md:right-6 z-10">
         <button
           onClick={() => setIsModalOpen(true)}
-          className="text-sm text-gray-400 hover:text-white transition-colors p-2 border-white border-2 rounded-md"
+          className="text-sm text-white hover:text-white transition-colors p-2 border-white border-2 rounded-md"
         >
           Connect
         </button>
@@ -133,88 +134,7 @@ export default function Home() {
         </section>
 
         {/* Work Experience Section */}
-        <section className="mb-16 md:mb-20">
-          <h2 className="text-base font-normal mb-8 md:mb-10">
-            Work Experience
-          </h2>
-
-          <div className="space-y-10 md:space-y-12">
-            {/* Job 1 - Agency Design Dreams Studio */}
-            <div className="flex flex-col md:grid md:grid-cols-[140px_1fr] gap-2 md:gap-8">
-              <div className="text-gray-500 text-xs sm:text-sm">
-                Jan 2024 - Dec 2024
-              </div>
-              <div>
-                <h3 className="font-normal text-sm sm:text-sm mb-2 md:mb-3">
-                  Full-Stack Developer – Agency Design Dreams Studio
-                </h3>
-                <p className="text-gray-400 text-sm sm:text-sm mb-3 md:mb-4">
-                  Developed custom web solutions for clients using React.js,
-                  Python, and WordPress. Implemented SEO strategies and
-                  development best practices to optimize performance and
-                  usability. Designed RESTful APIs, database structures, and
-                  scalable components for web and mobile projects.
-                </p>
-                <ul className="pt-2 text-gray-500 text-xs sm:text-sm flex flex-wrap gap-3">
-                  <li>React.js</li>
-                  <li>Python</li>
-                  <li>WordPress</li>
-                  <li>RESTful APIs</li>
-                  <li>SEO</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Job 3 - COCO GYM FITNESS */}
-            <div className="flex flex-col md:grid md:grid-cols-[140px_1fr] gap-2 md:gap-8">
-              <div className="text-gray-500 text-xs sm:text-sm">
-                Aug 2023 - Nov 2024
-              </div>
-              <div>
-                <h3 className="font-normal text-sm sm:text-sm mb-2 md:mb-3">
-                  In-House Web Developer – COCO GYM FITNESS
-                </h3>
-                <p className="text-gray-400 text-sm sm:text-sm mb-3 md:mb-4">
-                  Developed the official gym website as a personal initiative to
-                  improve its digital presence. Used React, TailwindCSS,
-                  Material UI, Node.js, and SQL to create a modern and
-                  responsive interface. Implemented contact forms and
-                  informative sections for client interaction.
-                </p>
-                <ul className="pt-2 text-gray-500 text-xs sm:text-sm flex flex-wrap gap-3">
-                  <li>ReactJS</li>
-                  <li>TailwindCSS</li>
-                  <li>Material UI</li>
-                  <li>NodeJS</li>
-                  <li>SQL</li>
-                </ul>
-              </div>
-            </div>
-            {/* Job 2 - Freelance Web Consultant */}
-            <div className="flex flex-col md:grid md:grid-cols-[140px_1fr] gap-2 md:gap-8">
-              <div className="text-gray-500 text-xs sm:text-sm">
-                Aug 2022 - Nov 2023
-              </div>
-              <div>
-                <h3 className="font-normal text-sm sm:text-sm mb-2 md:mb-3">
-                  Freelance Web Consultant – Digital Tools & Development
-                </h3>
-                <p className="text-gray-400 text-sm sm:text-sm mb-3 md:mb-4">
-                  Advised small businesses on implementing digital tools.
-                  Developed customized websites and applications prioritizing
-                  user experience. Maintained and optimized web pages for
-                  performance and SEO.
-                </p>
-                <ul className="pt-2 text-gray-500 text-xs sm:text-sm flex flex-wrap gap-3">
-                  <li>Web Development</li>
-                  <li>SEO</li>
-                  <li>User Experience</li>
-                  <li>Digital Consulting</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Workexperince />
 
         {/* Education & Certifications Section */}
         <section className="mb-16 md:mb-20">

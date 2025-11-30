@@ -15,7 +15,7 @@ export default function Projects() {
       title: "URL Shortener",
       description:
         "This project allows you to generate short links, manage them from an interactive table and review metrics such as clicks, views and creation date.",
-      technologies: ["React", "Node.js", "TailwindCSS", "Material UI", "SQL"],
+      technologies: ["Next.js", "Typescript", "TailwindCSS", "Jest", "Prisma"],
       image: "/http.png",
       link: "https://getyourlink.vercel.app/",
       github: null,
@@ -27,7 +27,7 @@ export default function Projects() {
       title: "Just DrawOk",
       description:
         "Just DrawOk is a lightweight digital whiteboard web application where you can draw freely.",
-      technologies: ["React.js", "Python", "WordPress", "RESTful APIs", "SEO"],
+      technologies: ["Next.js", "TypeScript", "TailwindCSS", "Vercel", "Canvas"],
       image: "/draw.png",
       link: "https://just-drawok.vercel.app/",
       github: null,
@@ -143,7 +143,7 @@ export default function Projects() {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm sm:text-sm hover:border hover:border-amber-50 hover:text-gray-300 transition-colors relative group"
+                        className="text-sm sm:text-sm hover:border hover:border-white hover:text-gray-300 transition-colors relative group"
                       >
                         {project.title}
                         <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-300 transition-all duration-300 ease-out group-hover:w-full"></span>

@@ -22,7 +22,7 @@ export default function profileSection() {
           </h1>
           <p className="text-gray-400 text-base mb-1">
             Full-Stack Developer
-            <span className="text-[12px] opacity-60 ml-0.5">+2 experience</span>
+            <span className="text-[10px] sm:text-[14px] opacity-60 ml-0.5">+2 experience</span>
           </p>
           <p className="text-gray-500 text-sm">
             Guanacaste, Playas del Coco · Costa Rica
