@@ -10,6 +10,24 @@ export default function Projects() {
 
   const projects = [
     {
+      id: "Streetwear Store",
+      title: "Streetwear Store",
+      description:
+        "Premium streetwear e-commerce platform featuring urban fashion with a modern, minimalist design. Built for performance and user experience.",
+      technologies: [
+        "NextJs",
+        "TypeScript",
+        "TailwindCSS",
+        "Vercel",
+        "Shadcn/UI",
+      ],
+      image: "/shop.png",
+      link: "https://v0-wstreetwear.vercel.app/",
+      github: "https://github.com/LilDre7/wstreetwear",
+      year: "2025",
+      role: "Full-Stack Developer",
+    },
+    {
       id: "shortener-url",
       title: "URL Shortener",
       description:
@@ -36,24 +54,6 @@ export default function Projects() {
       image: "/draw.png",
       link: "https://just-drawok.vercel.app/",
       github: null,
-      year: "2025",
-      role: "Full-Stack Developer",
-    },
-    {
-      id: "Streetwear Store",
-      title: "Streetwear Store",
-      description:
-        "Premium streetwear e-commerce platform featuring urban fashion with a modern, minimalist design. Built for performance and user experience.",
-      technologies: [
-        "NextJs",
-        "TypeScript",
-        "TailwindCSS",
-        "Vercel",
-        "Shadcn/UI",
-      ],
-      image: "/shop.png",
-      link: "https://v0-wstreetwear.vercel.app/",
-      github: "https://github.com/LilDre7/wstreetwear",
       year: "2025",
       role: "Full-Stack Developer",
     },
