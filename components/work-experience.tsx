@@ -16,7 +16,7 @@ interface WorkExperience {
 const experiences: WorkExperience[] = [
   {
     id: "agency-design",
-    period: "Jan 2024 - Dec 2024",
+    period: "Feb 2025 - Sep 2025",
     title: "Full-Stack Developer",
     company: "Agency Design Dreams Studio",
     description:
@@ -25,7 +25,7 @@ const experiences: WorkExperience[] = [
   },
   {
     id: "coco-gym",
-    period: "Aug 2023 - Nov 2024",
+    period: "Nov 2023 - Jan 2024",
     title: "In-House Web Developer",
     company: "COCO GYM FITNESS",
     description:
@@ -34,7 +34,7 @@ const experiences: WorkExperience[] = [
   },
   {
     id: "freelance",
-    period: "Aug 2022 - Nov 2023",
+    period: "Mar 2023 - Oct 2023",
     title: "Freelance Web Consultant",
     company: "Digital Tools & Development",
     description:
