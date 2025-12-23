@@ -5,7 +5,6 @@ import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
-
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
 
@@ -27,25 +26,37 @@ export default function Projects() {
       title: "Just DrawOk",
       description:
         "Just DrawOk is a lightweight digital whiteboard web application where you can draw freely.",
-      technologies: ["Next.js", "TypeScript", "TailwindCSS", "Vercel", "Canvas"],
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Vercel",
+        "Canvas",
+      ],
       image: "/draw.png",
       link: "https://just-drawok.vercel.app/",
       github: null,
       year: "2025",
       role: "Full-Stack Developer",
     },
-    // {
-    //   id: "client-management",
-    //   title: "Client Management System",
-    //   description:
-    //     "Internal management system for small businesses with dashboard, analytics, and customer data management.",
-    //   technologies: ["Vue.js", "Express", "MongoDB", "Chart.js"],
-    //   image: "/projects/client-management.jpg",
-    //   link: null,
-    //   github: "https://github.com/LilDre7/client-management",
-    //   year: "2023",
-    //   role: "Full-Stack Developer",
-    // },
+    {
+      id: "Streetwear Store",
+      title: "Streetwear Store",
+      description:
+        "Premium streetwear e-commerce platform featuring urban fashion with a modern, minimalist design. Built for performance and user experience.",
+      technologies: [
+        "NextJs",
+        "TypeScript",
+        "TailwindCSS",
+        "Vercel",
+        "Shadcn/UI",
+      ],
+      image: "/shop.png",
+      link: "https://v0-wstreetwear.vercel.app/",
+      github: "https://github.com/LilDre7/wstreetwear",
+      year: "2025",
+      role: "Full-Stack Developer",
+    },
     // {
     //   id: "portfolio-v2",
     //   title: "Personal Portfolio v2",
@@ -75,7 +86,9 @@ export default function Projects() {
             >
               {/* Year Label - aligned with title */}
               <div className="md:col-span-3 order-2 md:order-1 hidden md:block">
-                <p className="text-xs sm:text-sm text-gray-500">{project.year}</p>
+                <p className="text-xs sm:text-sm text-gray-500">
+                  {project.year}
+                </p>
               </div>
 
               {/* Project Content */}
@@ -95,9 +108,7 @@ export default function Projects() {
 
                 {/* Mobile Layout - date and title inline */}
                 <div className="flex items-center gap-2 md:hidden">
-                  <p className="text-xs text-gray-500">
-                    {project.year} -
-                  </p>
+                  <p className="text-xs text-gray-500">{project.year} -</p>
                   <div className="flex items-center gap-1">
                     {project.link ? (
                       <a
@@ -159,7 +170,9 @@ export default function Projects() {
                         <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-300 transition-all duration-300 ease-out group-hover:w-full"></span>
                       </a>
                     ) : (
-                      <p className="text-sm sm:text-sm hover:border hover:border-white">{project.title}</p>
+                      <p className="text-sm sm:text-sm hover:border hover:border-white">
+                        {project.title}
+                      </p>
                     )}
                     {(project.link || project.github) && (
                       <a

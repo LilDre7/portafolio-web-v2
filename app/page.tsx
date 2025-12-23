@@ -12,6 +12,10 @@ import Workexperince from "@/components/work-experience";
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // El useEffect es un hook de React que se usa para ejecutar una función cuando el componente se monta o se desmonta.
+  // En este caso, se usa para agregar o remover la clase overflow-hidden del body cuando el modal está abierto o cerrado.
+  // Esto es para evitar que el scroll se desplace cuando el modal está abierto.
+
   useEffect(() => {
     if (isModalOpen) {
       document.body.classList.add("overflow-hidden");
