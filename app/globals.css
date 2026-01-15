@@ -87,3 +87,134 @@
     @apply bg-black text-white;
   }
 }
+
+@keyframes glitch-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+    filter: blur(4px);
+  }
+  20% {
+    opacity: 0.3;
+    transform: translateX(5px) skewX(-10deg);
+    filter: blur(2px);
+  }
+  40% {
+    opacity: 0.6;
+    transform: translateX(-3px) skewX(5deg);
+    filter: blur(1px);
+  }
+  60% {
+    opacity: 0.8;
+    transform: translateX(2px) skewX(-3deg);
+  }
+  80% {
+    opacity: 0.9;
+    transform: translateX(-1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) skewX(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes glitch-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0) skewX(0);
+    filter: blur(0);
+  }
+  20% {
+    opacity: 0.9;
+    transform: translateX(2px) skewX(3deg);
+  }
+  40% {
+    opacity: 0.6;
+    transform: translateX(-5px) skewX(-5deg);
+    filter: blur(1px);
+  }
+  60% {
+    opacity: 0.3;
+    transform: translateX(3px) skewX(10deg);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+    filter: blur(4px);
+  }
+}
+
+@keyframes glitch-cycle {
+  0%, 45% {
+    opacity: 1;
+    transform: translateX(0) skewX(0);
+    filter: blur(0);
+  }
+  50%, 95% {
+    opacity: 0;
+    transform: translateX(10px);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) skewX(0);
+    filter: blur(0);
+  }
+}
+
+.animate-glitch-cycle {
+  animation: glitch-cycle 4s ease-in-out infinite;
+}
+
+@keyframes fade-cycle {
+  0%, 45% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50%, 95% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-cycle {
+  animation: fade-cycle 4s ease-in-out infinite;
+}
+
+@keyframes image-glitch-fade {
+  0%, 45% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: blur(0) brightness(1);
+  }
+  48% {
+    opacity: 0.7;
+    transform: scale(1.05) rotate(2deg) skewX(5deg);
+    filter: blur(2px) brightness(1.2);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.95) rotate(-2deg) skewX(-5deg);
+    filter: blur(4px) brightness(0.8);
+  }
+  52% {
+    opacity: 0.7;
+    transform: scale(1.05) rotate(2deg) skewX(5deg);
+    filter: blur(2px) brightness(1.2);
+  }
+  55%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: blur(0) brightness(1);
+  }
+}
+
+.animate-image-glitch {
+  animation: image-glitch-fade 5s ease-in-out infinite;
+}

@@ -131,9 +131,10 @@ export default function Home() {
         <section className="mb-16 md:mb-20">
           <h2 className="text-base font-normal mb-4 md:mb-6">About</h2>
           <p className="text-gray-400 leading-relaxed text-sm sm:text-sm">
-            Full-Stack Developer focused on creating scalable and efficient web
-            solutions using technologies like JavaScript, Python, React, and
-            Node.js, emphasizing user experience and development best practices.
+            Full-Stack developer with focus on frontend and scalable web
+            application architecture. Experience in Java, Spring Boot, Node.js
+            and React, applying good development practices, designing REST APIs
+            and relational and NoSQL databases.
           </p>
         </section>
 

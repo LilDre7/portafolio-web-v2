@@ -30,22 +30,23 @@ export default function Skills() {
           {
             category: "Languages",
             items: [
-              { name: "React" },
-              { name: "Vue" },
+              { name: "NextJs" },
+              { name: "ReactJs" },
               { name: "TypeScript" },
               { name: "JavaScript" },
               { name: "TailwindCSS" },
               { name: "HTML" },
               { name: "CSS" },
+              { name: "Python" },
             ],
           },
           {
             category: "Backend",
             items: [
+              { name: "Java" },
+              { name: "Spring Boot" },
               { name: "Node.js" },
               { name: "Express" },
-              { name: "Python" },
-              { name: ".NET" },
               { name: "MongoDB" },
               { name: "PostgreSQL" },
             ],
@@ -65,15 +66,17 @@ export default function Skills() {
             key={category}
             className="flex flex-col md:grid md:grid-cols-[140px_1fr] gap-2 md:gap-8"
           >
-            <div className="text-gray-500 text-sm sm:text-sm pt-1 pb-3 sm:pb-0">
+            <div className="text-gray-500 text-sm sm:text-sm pt-1 pb-3 sm:pb-0 animate-fade-cycle">
               {category}
             </div>
             <div className="flex flex-wrap gap-2 items-center">
-              {items.map(({ name }) => (
+              {items.map(({ name }, index) => (
                 <span
                   key={name}
-                  className={`font-mono px-2 py-1 text-xs rounded flex items-center gap-1.5
-                  }`}
+                  className="font-mono px-2 py-1 text-xs rounded flex items-center gap-1.5 animate-glitch-cycle"
+                  style={{
+                    animationDelay: `${index * 0.15}s`,
+                  }}
                 >
                   <TechIcon name={name} />
                   {name}
