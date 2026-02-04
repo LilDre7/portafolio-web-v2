@@ -10,6 +10,48 @@ export default function Projects() {
 
   const projects = [
     {
+      id: "Just DrawOk",
+      title: "Just DrawOk",
+      description:
+        "Just DrawOk is a lightweight digital whiteboard web application where you can draw freely.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Vercel",
+        "Canvas",
+      ],
+      image: "/draw.png",
+      link: "https://just-drawok.vercel.app/",
+      github: null,
+      year: "2025",
+      role: "Full-Stack Developer",
+    },
+    {
+      id: "Password Manager",
+      title: "Password Manager",
+      description:
+        "A modern, secure, and user-friendly password management application built with cutting-edge web technologies. It allows you to securely store, generate, and manage your passwords with ease.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Vercel",
+        "Canvas",
+        "Encryption",
+        "Local Storage",
+        "Node.js",
+        "Express",
+        "Supabase",
+        "JWT",
+      ],
+      image: "/fav.png",
+      link: "https://v0-passyourpassword-manager.vercel.app/",
+      github: null,
+      year: "2025",
+      role: "Full-Stack Developer",
+    },
+    {
       id: "Streetwear Store",
       title: "Streetwear Store",
       description:
@@ -35,24 +77,6 @@ export default function Projects() {
       technologies: ["Next.js", "Typescript", "TailwindCSS", "Jest", "Prisma"],
       image: "/http.png",
       link: "https://getyourlink.vercel.app/",
-      github: null,
-      year: "2025",
-      role: "Full-Stack Developer",
-    },
-    {
-      id: "Just DrawOk",
-      title: "Just DrawOk",
-      description:
-        "Just DrawOk is a lightweight digital whiteboard web application where you can draw freely.",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "TailwindCSS",
-        "Vercel",
-        "Canvas",
-      ],
-      image: "/draw.png",
-      link: "https://just-drawok.vercel.app/",
       github: null,
       year: "2025",
       role: "Full-Stack Developer",
