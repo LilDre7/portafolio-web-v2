@@ -70,6 +70,18 @@ export default function Projects() {
       role: "Full-Stack Developer",
     },
     {
+      id: "Creative Agency",
+      title: "Atelier Studio.",
+      description:
+        "This is a creative agency website template built with Next.js, Typescript, TailwindCSS, and Shadcn/UI. It is a responsive and modern website that is easy to customize and use.",
+      technologies: ["Next.js", "Typescript", "TailwindCSS", "Jest", "Prisma"],
+      image: "/agency.png",
+      link: "https://v0-agency-atelier.vercel.app/",
+      github: null,
+      year: "2025",
+      role: "Full-Stack Developer",
+    },
+    {
       id: "shortener-url",
       title: "URL Shortener",
       description:
@@ -81,18 +93,6 @@ export default function Projects() {
       year: "2025",
       role: "Full-Stack Developer",
     },
-    // {
-    //   id: "portfolio-v2",
-    //   title: "Personal Portfolio v2",
-    //   description:
-    //     "Modern minimalist portfolio website with brutalist design elements and responsive layout.",
-    //   technologies: ["Next.js", "TypeScript", "TailwindCSS"],
-    //   image: "/projects/portfolio.jpg",
-    //   link: null,
-    //   github: "https://github.com/LilDre7/portfolio-web-v2",
-    //   year: "2024",
-    //   role: "Full-Stack Developer",
-    // },
   ];
 
   return (
