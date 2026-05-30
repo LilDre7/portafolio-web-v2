@@ -8,7 +8,8 @@ interface WorkExperience {
   period: string;
   title: string;
   company: string;
-  description: string;
+  location: string;
+  highlights: string[];
   technologies: string[];
 }
 
@@ -16,35 +17,51 @@ interface WorkExperience {
 const experiences: WorkExperience[] = [
   {
     id: "agency-design",
-    period: "Feb 2025 - Sep 2025",
+    period: "February 2025 - September 2025",
     title: "Full-Stack Developer",
     company: "Agency Design Dreams Studio",
-    description:
-      "Developed custom web solutions for clients using React.js, Python, and WordPress. Implemented SEO strategies and development best practices to optimize performance and usability. Designed RESTful APIs, database structures, and scalable components for web and mobile projects.",
-    technologies: ["React.js", "Python", "WordPress", "RESTful APIs", "SEO"],
-  },
-  {
-    id: "coco-gym",
-    period: "Nov 2023 - Jan 2024",
-    title: "In-House Web Developer",
-    company: "COCO GYM FITNESS",
-    description:
-      "Developed the official gym website as a personal initiative to improve its digital presence. Used React, TailwindCSS, Material UI, Node.js, and SQL to create a modern and responsive interface. Implemented contact forms and informative sections for client interaction.",
-    technologies: ["ReactJS", "TailwindCSS", "Material UI", "NodeJS", "SQL"],
+    location: "Costa Rica - REMOTE",
+    highlights: [
+      "Developed web applications using React, Spring Boot, and WordPress following modern development practices.",
+      "Designed and implemented RESTful APIs for web and mobile integrations.",
+      "Collaborated with designers and stakeholders to deliver user-friendly and responsive interfaces.",
+      "Improved application performance and SEO through optimization techniques.",
+    ],
+    technologies: ["React", "Spring Boot", "WordPress", "RESTful APIs", "SEO"],
   },
   {
     id: "freelance",
-    period: "Mar 2023 - Oct 2023",
-    title: "Freelance Web Consultant",
-    company: "Digital Tools & Development",
-    description:
-      "Advised small businesses on implementing digital tools. Developed customized websites and applications prioritizing user experience. Maintained and optimized web pages for performance and SEO.",
+    period: "March 2023 - October 2023",
+    title: "Freelance Full Stack Developer",
+    company: "Independent",
+    location: "Costa Rica - REMOTE",
+    highlights: [
+      "Built custom websites and applications for small businesses using modern web technologies.",
+      "Translated business requirements into technical solutions.",
+      "Optimized website performance, usability, and SEO.",
+      "Managed full development lifecycle from planning to deployment.",
+    ],
     technologies: [
       "Web Development",
+      "Technical Solutions",
+      "Performance",
+      "Usability",
       "SEO",
-      "User Experience",
-      "Digital Consulting",
     ],
+  },
+  {
+    id: "coco-gym",
+    period: "November 2023 - January 2024",
+    title: "Internal Web Developer",
+    company: "COCO GYM FITNESS",
+    location: "Costa Rica - Playas del Coco",
+    highlights: [
+      "Developed an internal dashboard using React, Node.js, and SQL.",
+      "Implemented authentication systems and session management.",
+      "Built features to improve client management and internal processes.",
+      "Debugged and maintained application performance.",
+    ],
+    technologies: ["React", "Node.js", "SQL", "Authentication", "Dashboards"],
   },
 ];
 
@@ -60,13 +77,19 @@ function ExperienceCard({ experience }: { experience: WorkExperience }) {
       </time>
 
       <div>
-        <h3 className="font-normal text-sm sm:text-base mb-2 md:mb-3">
+        <h3 className="font-normal text-sm sm:text-base mb-1">
           {experience.title} – {experience.company}
         </h3>
 
-        <p className="text-gray-400 text-sm leading-relaxed mb-3 md:mb-4">
-          {experience.description}
+        <p className="text-gray-500 text-xs sm:text-sm mb-2 md:mb-3">
+          {experience.location}
         </p>
+
+        <ul className="text-gray-400 text-sm leading-relaxed mb-3 md:mb-4 list-disc pl-4 space-y-1">
+          {experience.highlights.map((highlight) => (
+            <li key={highlight}>{highlight}</li>
+          ))}
+        </ul>
 
         <ul
           className="pt-2 text-gray-500 text-xs sm:text-sm flex flex-wrap gap-2"

@@ -10,6 +10,7 @@ import Workexperince from "@/components/work-experience";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import Education from "@/components/education";
 import ContactSection from "@/components/contactSection";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -337,6 +338,8 @@ export default function Home() {
 
           {/* Links Section */}
           <ContactSection />
+
+          <Footer />
         </main>
       </div>
     </>
